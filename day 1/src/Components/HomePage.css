@@ -1,0 +1,152 @@
+body, html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #03c598;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    border: 1px rgb(191, 190, 190);
+    margin-left: 150px;
+    box-shadow: 0px 0px 20px #6d6d6d;
+    scrollbar-shadow-color: #03c598;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+li:hover {
+    color: #34495e;
+    cursor: pointer;
+}
+
+button,
+li button {
+    background-color: #03c598;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover,
+li button:hover {
+    background-color: #005a45;
+}
+
+.main-content {
+    padding: 40px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.bank-features {
+    margin-top: 40px;
+}
+
+.bank-features h2 {
+    color: #2ecc71;
+}
+
+.bank-features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bank-features li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.banking-elements {
+    margin-top: 40px;
+}
+
+.account-balance,
+.recent-transactions,
+.quick-links {
+    margin-bottom: 30px;
+}
+
+.account-balance p {
+    font-size: 24px;
+    color: #03c598;
+}
+
+.recent-transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-transactions li {
+    font-size: 16px;
+    color: #333;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li {
+    font-size: 16px;
+    color: #03c598;
+}
+
+.foot {
+    background-color: #fff;
+    height: 39%;
+}
+
+.foot button {
+    margin-left: 340%;
+    width: 10vw;
+}
+
+.bank-features,
+.foot,
+.banking-elements,
+.account-balance,
+.recent-transactions,
+.quick-links {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
