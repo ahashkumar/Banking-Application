@@ -1,25 +1,29 @@
+// App.js
 import React, { useState } from 'react';
-import './App.css';
-import Login from './login';
+import Homepage from './HomePage';
 import ThanksPage from './ThanksPage';
+import Login from './login';  // Import LoginPage
 
 const App = () => {
-  const [showThanks, setShowThanks] = useState(false);
+  const [showThanksPage, setShowThanksPage] = useState(false);
+  const [showLoginPage, setShowLoginPage] = useState(true);  // Add state for login page visibility
 
-  const handleLoginComplete = () => {
-    setShowThanks(true);
+  const handleDismissThanks = () => {
+    setShowThanksPage(false);
   };
 
-  const handleThanksDismiss = () => {
-    setShowThanks(false);
+  const handleToggleLogin = () => {
+    setShowLoginPage(!showLoginPage);
   };
 
   return (
     <div>
-      {!showThanks ? (
-        <Login onLoginComplete={handleLoginComplete} />
+      {showThanksPage ? (
+        <ThanksPage onDismissThanks={handleDismissThanks} />
+      ) : showLoginPage ? (
+        <Login onToggleLogin={handleToggleLogin} />
       ) : (
-        <ThanksPage onDismissThanks={handleThanksDismiss} />
+        <Homepage onThanksClick={() => setShowThanksPage(true)} />
       )}
     </div>
   );
